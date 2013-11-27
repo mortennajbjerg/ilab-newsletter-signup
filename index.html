@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="newsletter-wrap"></div>
+    
+    <script type="text/html" id="newsletter-tpl">
+        <div class="mailbox">
+            <div class="mailbox__flag"></div>
+        </div>
+        <form id="mc-form">
+            <input id="mc-email" type="email" placeholder="email">
+            <button type="submit">Submit</button>
+            <div class="mc-response"></div>
+        </form>
+    </script>
+    
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/backbone/backbone-min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

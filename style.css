@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+BODY{
+    margin: 100px auto;
+    width: 800px;
+}
+
+INPUT{
+    border: none;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.mc-response{
+    color: green;
+    display: block;
+}
+.mc-response.error{ color: red; }
+
+.newsletter-wrap{ position:relative; }
+
+FORM#mc-form{ background: #FFF; }
+.mailbox{
+    background: red;
+    height: 50px;
+    right: 40px;
+    position:absolute;
+    top: 0;
+    width: 50px;
+    z-index: -1;
+}
+.mailbox .mailbox__flag{
+    background: yellow;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    width: 10px;
+    
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-0.90);
+    -ms-transform: rotate(-90deg);
+    
+    -webkit-transition: all 1.5s ease;                  
+    -moz-transition: all 1.5s ease;                 
+    -o-transition: all 1.5s ease;   
+    -ms-transition: all 1.5s ease;          
+    transition: all 1.5s ease;
+}
+.mailbox.success .mailbox__flag{
+    right: 10px;
+    top: 0;
+    
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
