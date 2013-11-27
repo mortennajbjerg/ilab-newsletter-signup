@@ -1,8 +1,10 @@
 ilab-newsletter-signup
 ======================
 
-Newsletter signup for Innovation Lab website
+Newsletter signup for Innovation Lab website. Beware: WIP
 
-# Todo
+## Todo
 
-Add grunt minify
+* Add grunt minify
+* Add postbox graphics
+* Clean up stylesheet
